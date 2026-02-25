@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll2Loot | Mystery & Adventure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: white; }
+        .hero-gradient {
+            background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 relative overflow-hidden">
+    <!-- Background Decor -->
+    <div class="absolute inset-0 hero-gradient pointer-events-none"></div>
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-600/10 blur-[120px] rounded-full"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/10 blur-[120px] rounded-full"></div>
+
+    <main class="max-w-4xl w-full text-center z-10">
+        <!-- Logo Area -->
+        <div class="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 shadow-2xl shadow-indigo-500/20 mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
+            ROLL2LOOT
+        </h1>
+        
+        <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-xl mx-auto leading-relaxed">
+            The ultimate destination for crates, mystery, and gaming adventure. Something big is rolling your way.
+        </p>
+
+        <!-- Status Card -->
+        <div class="glass rounded-3xl p-8 mb-12 max-w-lg mx-auto shadow-2xl">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                </span>
+                <span class="text-emerald-400 font-bold tracking-widest text-xs uppercase">System Status: Building</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-2">Under Construction</h2>
+            <p class="text-slate-400 text-sm">We are currently migrating our platform to a new engine. Please check back soon.</p>
+        </div>
+
+        <!-- Social/Action Links -->
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://github.com/roll2loot" class="px-8 py-3 bg-white text-slate-900 font-bold rounded-xl hover:bg-slate-200 transition-all active:scale-95">
+                View GitHub
+            </a>
+            <a href="mailto:contact@roll2loot.com" class="px-8 py-3 bg-slate-800 text-white font-bold rounded-xl hover:bg-slate-700 transition-all border border-slate-700 active:scale-95">
+                Contact Support
+            </a>
+        </div>
+    </main>
+
+    <footer class="mt-20 text-slate-500 text-xs tracking-widest uppercase">
+        &copy; 2024 Roll2Loot &bull; Built with Precision
+    </footer>
+</body>
+</html>
